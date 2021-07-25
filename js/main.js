@@ -4,9 +4,7 @@ $(document).ready(function(){
     if(winWidth>480) {
         //480이상인 버전
         $('header nav').show();
-        $('#fullpage').fullpage({
-            loopBottom:true,
-        });
+        
         
     }else{
         //모바일버전
@@ -69,7 +67,8 @@ $(document).ready(function(){
     console.log(imgHeight);      //높이값
 
     //만약 접속한 기기의 가로길이가 1600이상이면 양쪽 슬라이드 실행되고 1600미만이면 모바일 슬라이드(한쪽 슬라이드) 실행
-    if(winWidth>=1600){
+    if(winWidth>1600){
+        
         //pc버전
         //왼쪽 이미지 영역 - 첫번째 이미지가 보임
         $('.photo').css('z-index',1);
@@ -248,9 +247,10 @@ $(document).ready(function(){
                 $('.box ul').stop().animate({ left: 0 }, 1000, 'easeInOutExpo');
             }
         });
-
+        
         //fullpage
         $('#fullpage').fullpage({
+            loopBottom:true,
             //fullpage의 동그란 메뉴 사용
             navigation: true,
             //fullpage의 동그란 메뉴 위치를 화면 왼쪽으로 설정
