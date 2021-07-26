@@ -997,7 +997,7 @@ section h1 {
     }
     .apply .apply_box {
         position:absolute;
-        bottom:8vw;
+        bottom:5vw;
         left:50%;
         transform: translate(-50%);
         width:30%;
@@ -1382,7 +1382,7 @@ section h1 {
     header { position:relative;}
     header .logo { width:30vw; margin:2vw;}
     header .menu { justify-content:flex-end;}
-    header .menu_btn { width:10vw; margin:3.5vw 2vw; box-shadow:none;}
+    header .menu_btn { width:10vw; height:10vw; margin:3.5vw 2vw; box-shadow:1px 1px 3px #321e19;}
     section { width:100%; position:absolute; z-index:1;}
     section h1 { font-size:6vw; margin:20vw 0 10vw;}
     .main { width:100vw; height:80vh;}
@@ -1573,8 +1573,8 @@ section h1 {
     }
     
     /* The Caffe Menu */
-    .box_wrap { display:none;}
-    .mo_box_wrap { display:block;}
+    .box_wrap { display:none; width:100%;}
+    .mo_box_wrap { display:block; width:100%; height:80vh;}
     .mo_box_wrap .mo_box {
         width:100vw;
         height:90vh;
@@ -1620,20 +1620,21 @@ section h1 {
     }
 
     /*  cummunity  */
-    .community ul { flex-flow:column nowrap;}
+    .community {width:100%;}
+    .community ul { flex-flow:column nowrap; width:100%;}
     .community ul li {
         width:100%;
         height:3333.33333333333333%;
     }
     .community ul li .com_txt {
-        top:40%;
+        top:45%;
         left:50%;
         transform:translateX(-50%);
 
     }
     .community ul li .com_txt h2{
-        font-size:5vw;
-        line-height:10vw;
+        font-size:6vw;
+        line-height:12vw;
     }
     .community ul li .com_txt p {
         font-size:3vw;
@@ -1642,15 +1643,17 @@ section h1 {
         display:block;
         opacity:0.5;
     }
-    .s4 {
+    #s4 {
         display:flex;
         flex-flow:row wrap;
+        width:100%;
+        height:100vh;
     }
     .s4_txt {
         width:100%;
         height:40vw;
         clear: both;
-        padding:20vw 0 10vw;
+        padding:35vw 0;
     }
     .s4_txt h2 {
         font-size:6vw;
@@ -1688,11 +1691,11 @@ section h1 {
         position:relative;
         display:block;
         width:100%;
-        height:80vh;
+        height:15vh;
     }
     .apply .apply_box {
         position:absolute;
-        bottom:20vw;
+        top:0;
         left:50%;
         transform: translate(-50%);
         width:45%;
