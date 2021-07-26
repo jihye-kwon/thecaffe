@@ -1452,7 +1452,7 @@ section h1 {
     .main .bottom_btn .number {
         width:200px;
         left:-30%;
-        top:-620%;
+        top:-550%;
         transform:translateX(0);
         background-color:transparent;
         border:transparent;
@@ -1547,8 +1547,7 @@ section h1 {
         margin-bottom:2vw;
     }
     .mo_menu .mo_icon ul li:last-child { border-right:1px solid rgba(255,255,255,0.3);}
-    .mo_menu .mo_icon ul li:nth-child(1) a img, .mo_menu .mo_icon ul li:nth-child(3) a img, 
-    .mo_menu .mo_icon ul li:nth-child(4) a img { margin-bottom:4.2vw;}
+    .mo_menu .mo_icon ul li a img { margin-bottom:4.2vw;}
     .mo_menu address {
         margin-top:5vw;
         font-size:3vw;

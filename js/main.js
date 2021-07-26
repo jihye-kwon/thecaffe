@@ -321,7 +321,8 @@ $(document).ready(function(){
         $('.right_txt .txt:first-child').addClass('active');
 
         //next_btn에 클릭 이벤트
-        $('.next_btn').click(function(){
+        $('.next_btn').click(function(){       
+
             //이미지의 인덱스번호를 1씩 증가시킴
             mo_num++;
             //만약 인덱스번호가 mo_total값 이상이면 0으로 초기화
@@ -425,6 +426,11 @@ $(document).ready(function(){
             }
 
         });
+        var mo_auto=setInterval(mo_fn,3000);
+        function mo_fn(){
+            $('.next_btn').click();
+        } 
+
 
 
     }  //if
